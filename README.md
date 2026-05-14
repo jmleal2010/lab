@@ -44,7 +44,7 @@ https://www.jenkins.io/doc/book/installing/linux/
 
 ```
 sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
-  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key
 echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
   https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
@@ -114,7 +114,7 @@ echo "Hola desde jenkins!"
 En la pantalla del proyecto, entre otras acciones, podemos ver su workspace (directorio de trabajo), ejecutarlo con "Construir ahora" o volver a 
 configurarlo de nuevo en la opción "Configurar".
 
-Si ejecutamos el proyecto, veremos en la sección "Historia de tarea" una nueva entrada a la que podemos acceder  para comprobar su resultado, 
+Si ejecutamos el proyecto, veremos en la sección "Builds" una nueva entrada a la que podemos acceder  para comprobar su resultado, 
 con la opción "Console Output".
 
 En el panel de control tendremos todos los proyectos organizados en Vistas y/o Carpetas.
