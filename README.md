@@ -221,12 +221,12 @@ Ahora, creamos un nuevo proyecto en Jenkins para que cada vez que subamos una nu
 se ejecute la tarea, que creará la imagen y la subirá a Docker Hub.
 
 Primero, vamos a crear las crendenciales para DockerHub: 
-Panel de control - Administrar Jenkins - Credentials - Global - Add Credential - Tipo: Username with Password - Inserta Username y Password, 
+Administrar Jenkins - Credentials - Global - Add Credential - Tipo: Username with Password - Inserta Username y Password, 
 en ID pon un nombre a las credenciales.
 
-Ahora, volvemos al proyecto:
+Ahora, si no lo hemos hecho, creamos un nuevo proyecto de estilo libre:
 
-- Accedemos al Proyecto y pulsamos en Configurar
+- Si ya lo tenías, accede al Proyecto y pulsa en Configurar
 
 - En "Configurar el origen del código fuente": Marcamos Git y completamos los apartados: Repository URL y Branches to build. 
   Si es un repositorio público no es necesario indicar credenciales.
@@ -250,7 +250,7 @@ docker image rm jluisalvarez/flask-app:$TAG jluisalvarez/flask-app:latest
 ```
 - Finalmente, pulsamos en guardar.
 
-Ahora, cada vez que subamos una nueva versión a nuestro repositorio Github se ejecutará la tarea, creará una imagen y la súbirá a Docker Hub, etiquetada con la fecha y hora de creación, además subirá una versiçon latest.
+Ahora, cada vez que subamos una nueva versión a nuestro repositorio Github se ejecutará la tarea, creará una imagen y la súbirá a Docker Hub, etiquetada con la fecha y hora de creación, además subirá una versión latest.
 También, podemos iniciar la tarea manualmente.
 
 
