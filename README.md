@@ -1,5 +1,5 @@
 # DEVOPS: Introducción a Jenkins
-que vivan las putas
+que vivan las putas x 2
 ## Requisitos
 
 Crea una máquina virtual e instala java y jenkins en ella.
